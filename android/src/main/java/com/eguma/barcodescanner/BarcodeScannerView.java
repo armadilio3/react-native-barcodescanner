@@ -78,7 +78,7 @@ public class BarcodeScannerView extends FrameLayout implements Camera.PreviewCal
             }
 
             Result rawResult = null;
-            PlanarYUVLuminanceSource source = new PlanarYUVLuminanceSource(data, width, height, 0, 0, width, height, false);
+            PlanarYUVLuminanceSource source = new PlanarYUVLuminanceSource(data, width, height, 0, (hieght/2)-30, width, 60, false);
 
             if (source != null) {
                 BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(source));
